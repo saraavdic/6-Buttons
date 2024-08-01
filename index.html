@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        .result-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="result-container">
+        <h1 id="current-calculation"></h1>
+        <h1>Result: <span id="current-result">0</span></h1>
+    </div>
+    <div class="button-container">
+        <div class="button-row">
+            <button type="button" id="btn-add1">+1</button>
+            <button type="button" id="btn-add5">+5</button>
+            <button type="button" id="btn-add10">+10</button>
+        </div>
+        <div class="button-row">
+            <button type="button" id="btn-sub1">-1</button>
+            <button type="button" id="btn-sub5">-5</button>
+            <button type="button" id="btn-sub10">-10</button>
+        </div>
+    </div>
+    <script src="vendor.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
